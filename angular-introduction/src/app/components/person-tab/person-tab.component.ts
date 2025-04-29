@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 import { Component } from '@angular/core';
-=======
 import { Component, Input } from '@angular/core';
 import { Person } from 'src/app/shared./interfaces/person'; 
->>>>>>> 251ea01 (initial commit)
+
 
 @Component({
   selector: 'app-person-tab',
@@ -12,11 +10,9 @@ import { Person } from 'src/app/shared./interfaces/person';
   styleUrl: './person-tab.component.css'
 })
 export class PersonTabComponent {
-<<<<<<< HEAD
-=======
+
   @Input() personInput: Person | undefined;
-  
->>>>>>> 251ea01 (initial commit)
+
   name = "Thanasis"
 
   person = {
