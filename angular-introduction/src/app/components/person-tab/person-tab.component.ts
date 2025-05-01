@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
 import { Component, Input } from '@angular/core';
-import { Person } from 'src/app/shared./interfaces/person'; 
-
+import { Person } from 'src/app/shared./interfaces/person';
+import { EventBindExampleComponent } from "../event-bind-example/event-bind-example.component"; 
 
 @Component({
   selector: 'app-person-tab',
-  imports: [],
+  standalone: true,
+  imports: [EventBindExampleComponent],
   templateUrl: './person-tab.component.html',
   styleUrl: './person-tab.component.css'
 })
 export class PersonTabComponent {
 
-  @Input() personInput: Person | undefined;
+  @Input() personInput: Person | undefined;  
 
   name = "Thanasis"
 
@@ -19,6 +19,6 @@ export class PersonTabComponent {
     givenName:"Thanasis",
     surname:"Androutsos",
     age:20,
-    email:"androu@aueb.gr"
+    email:"androu@aueb.gr",
   }
 }

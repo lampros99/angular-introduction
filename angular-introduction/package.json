@@ -6,12 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-<<<<<<< HEAD
-    "test": "ng test"
-=======
     "test": "ng test",
     "deploy":"ng deploy --base-href=https://lampros99.github.io/cf7-angular-introduction/"
->>>>>>> 251ea01 (initial commit)
   },
   "private": true,
   "dependencies": {
