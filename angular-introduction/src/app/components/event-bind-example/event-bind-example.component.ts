@@ -28,5 +28,4 @@ export class EventBindExampleComponent {
   onUserInput(event: Event){
     this.userInput = (<HTMLInputElement>event.target).value;
   }
-
 }

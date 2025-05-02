@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Person } from 'src/app/shared./interfaces/person';
+import { Person } from 'src/app/shared/interfaces/person';
 import { EventBindExampleComponent } from "../event-bind-example/event-bind-example.component"; 
 
 @Component({
