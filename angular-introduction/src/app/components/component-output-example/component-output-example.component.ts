@@ -8,11 +8,11 @@ import {
   DIALOG_DATA,
   DialogModule,
 } from '@angular/cdk/dialog';
-import { ComponentInputExampleComponent } from 'src/app/component-input-example/component-input-example.component';
+// import { ComponentInputExampleComponent } from 'src/app/component-input-example/component-input-example.component';
 
 @Component({
   selector: 'app-component-output-example',
-  imports: [SimpleDatatableComponent],
+  imports: [DialogModule ,SimpleDatatableComponent],
   templateUrl: './component-output-example.component.html',
   styleUrl: './component-output-example.component.css'
 })
@@ -44,7 +44,7 @@ export class ComponentOutputExampleComponent {
 }
 
 @Component({
-  imports: [PersonTabComponent],
+  imports: [],
   template: `
      <table class="table table-bordered w-50">
             <tr>
