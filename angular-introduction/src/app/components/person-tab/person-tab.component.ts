@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Person } from 'src/app/shared/interfaces/person';
 import { EventBindExampleComponent } from "../event-bind-example/event-bind-example.component"; 
+import { EPerson } from 'src/app/shared/interfaces/eperson';
 
 @Component({
   selector: 'app-person-tab',
@@ -10,8 +11,7 @@ import { EventBindExampleComponent } from "../event-bind-example/event-bind-exam
   styleUrl: './person-tab.component.css'
 })
 export class PersonTabComponent {
-
-  @Input() personInput: Person | undefined;  
+  @Input() personInput: Person | EPerson | undefined;  
 
   name = "Thanasis"
 
