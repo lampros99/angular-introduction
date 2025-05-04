@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'; 
 import { FormsModule, NgForm } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
@@ -8,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-eperson-template-driven-form',
   imports: [
+    CommonModule,
     FormsModule,
     MatSelectModule,
     MatInputModule,
