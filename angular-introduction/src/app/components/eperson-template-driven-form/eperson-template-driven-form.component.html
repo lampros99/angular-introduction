@@ -1,4 +1,4 @@
-<div class="d-flex flex-column">
+<div class="d-flex flex-column w-75">
     <h5>New Person Form</h5>
     <form #eForm="ngForm" class="d-flex flex-column">
         <mat-form-field>
@@ -28,13 +28,13 @@
             #email="ngModel" /> 
             @if (email.errors && email.errors['required']){
                 <mat-error>Email is required</mat-error>
-            } @if (email.errors && email.errors['required']) {
+            } @if (email.errors && email.errors['pattern']) {
                 <mat-error>Invalid email</mat-error>
             }
         </mat-form-field>
         <mat-form-field>
             <mat-label>Education</mat-label>
-            <mat-select ngModel required name="Education" #education="ngModel">
+            <mat-select ngModel required name="education" #education="ngModel">
                 <mat-option value="Some college, no degree" select>Some college, no degree</mat-option>
                 <mat-option value="Master's degree">Master's degree</mat-option>
                 <mat-option value="Bachelor's degree">Bachelor's degree</mat-option>
@@ -43,9 +43,13 @@
             <mat-error>Education is required</mat-error>
         </mat-form-field>
     </form>
-    <button mat-flat-button
+    <button 
+    mat-flat-button
     [disabled]="eForm.invalid"
-     color="primary">Sumbit</button><br>
-    <button>Set value</button>
+    (click)="onSubmit(eForm.value)" 
+    color="primary">
+      Submit
+    </button>
+  <button (click)="onSetValue()">Set Value</button>
     {{eForm.value | json}}
 </div>

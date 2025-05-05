@@ -10,15 +10,20 @@ import { EPerson } from 'src/app/shared/interfaces/eperson';
   templateUrl: './template-driven-form-example.component.html',
   styleUrl: './template-driven-form-example.component.css'
 })
+
 export class TemplateDrivenFormExampleComponent {
-  // persons: EPerson[] = [];
-  // currentPerson: EPerson = {
-  //   givenName: '',
-  //   surName: '',
-  //   age: '',
-  //   email:'',
-  //   education:''
-  // };
+  persons: EPerson[] = [];
+  currentPerson: EPerson = {
+    givenName: '',
+    surName: '',
+    age: '',
+    email:'',
+    education:''
+  };
 
-
+  onPerson(data: EPerson){
+    this.persons.push(data)
+    this.currentPerson = data;
+    console.log("Father",this.persons)
+  }
 }

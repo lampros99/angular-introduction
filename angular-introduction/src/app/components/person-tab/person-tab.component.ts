@@ -21,4 +21,20 @@ export class PersonTabComponent {
     age:20,
     email:"androu@aueb.gr",
   }
+addressOReducation: any;
+  isPerson():boolean {
+    if(this.personInput && 'address' in this.personInput){
+      this.addressOReducation = this.personInput.address
+    return 'address' in this.personInput;
+    }
+     return false;
+  }
+ 
+  isEPerson():boolean {
+    if(this.personInput && 'education' in this.personInput){
+      this.addressOReducation = this.personInput.education
+      return 'aducation'in this.personInput;
+    }
+    return false;
+  }
 }
