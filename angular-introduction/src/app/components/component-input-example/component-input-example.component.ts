@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Person } from '../shared/interfaces/person';
-import { PersonTabComponent } from '../components/person-tab/person-tab.component';
+import { Person } from 'src/app/shared/interfaces/person';
+import { PersonTabComponent } from '../person-tab/person-tab.component'; 
 
 @Component({
   selector: 'app-component-input-example',

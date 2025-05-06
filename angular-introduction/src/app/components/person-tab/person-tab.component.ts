@@ -15,12 +15,12 @@ export class PersonTabComponent {
 
   name = "Thanasis"
 
-  person = {
-    givenName:"Thanasis",
-    surname:"Androutsos",
-    age:20,
-    email:"androu@aueb.gr",
-  }
+  // person = {
+  //   givenName:"Thanasis",
+  //   surname:"Androutsos",
+  //   age:20,
+  //   email:"androu@aueb.gr",
+  // }
 addressOReducation: any;
   isPerson():boolean {
     if(this.personInput && 'address' in this.personInput){
