@@ -24,7 +24,7 @@ import { EPerson } from 'src/app/shared/interfaces/eperson';
   styleUrl: './eperson-reactive-form.component.css'
 })
 export class EpersonReactiveFormComponent {
-  @Output() person = new EventEmitter<EPerson>()
+  @Output() person = new EventEmitter<EPerson>() 
 
   form = new FormGroup({
     givenName: new FormControl('', Validators.required),
